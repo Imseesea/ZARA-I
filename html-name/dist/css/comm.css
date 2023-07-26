@@ -288,8 +288,8 @@ input[type=password] {
   margin-bottom: 20px;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: 0 50%;
-     object-position: 0 50%;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
 }
 .list-event p {
   font-size: 1rem;
