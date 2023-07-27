@@ -62,305 +62,195 @@
       <header data-include-path="./outline/header.html">
       </header>
     </div>
-
-      <div class="swiper slide-g slide-intro">
+    <div class="slide-intro">
+      <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="https://images.unsplash.com/photo-1689874099574-b2c02629348b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60" alt="">
-            <div class="swiper-slide__txt">
-              <strong>블라블라블라</strong>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-              <a href="#">바로가기</a>
-            </div>
-
+            <video muted autoplay loop>
+              <source
+                src="./videos/zara main 1.mp4"
+                type="video/mp4"
+              />
           </div>
-          <div class="swiper-slide">Slide 2</div>
-          <div class="swiper-slide">Slide 3</div>
-        
+          <div class="swiper-slide">
+            <video muted autoplay loop>
+              <source
+                src="./videos/zara main 2.mp4"
+                type="video/mp4"
+              />
+          </div>
+          
         </div>
-        <!-- <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div> -->
         <div class="swiper-pagination"></div>
       </div>
+    
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      </script>
+    </div>
 
-      <main id="main">
-        <!-- section 제목이 있는 그룹 -->
-        <section class="bg-gray container section-g section-event">
-          <div class="inner"></div>
-          <!-- section-news에 각자 제목 넣어 -->
-          <h2 class="sec-tit">menu</h2>
-          <div class="section-contents">
-            <ul class="list-event">
-              <li>
-                <img src="./images/depth1/1.png" alt="event image">
-                <div class="depth1">
-
-                  <p>OUTER</p>
-                </div>
-              </li>
-              <li>
-                <img src="./images/depth1/2.png" alt="event image">
-                <p>TOP</p>
-              </li>
-              <li>
-                <img src="./images/depth1/3.png" alt="event image">
-                <p>BOTTOM</p>
-              </li>
-              <li>
-                <img src="./images/depth1/4.png" alt="event image">
-                <p>ACC</p>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="container section-g section-shopping">
-          <h2 class="section-tit">BEST</h2>
-          <div class="section-contents">
-            <ul class="lst-thumb-two-column">
-              <li>
-                <a href="#"> 
-                  <div class="thumb-shopping">
-                    <img src="./images/depth2/1.jpg" alt="shopping">
-                  </div>
-                  <div class="txt-shopping">
-                    <strong class="txt-shopping__tit">OUTER</strong>
-                    <p class="txt-shopping__desc">UTILITY
-                      POCKET
-                      JUMPER
-                      </p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#"> 
-                  <div class="thumb-shopping">
-                    <img src="./images/depth2/2.jpg" alt="shopping">
-                  </div>
-                  <div class="txt-shopping">
-                    <strong class="txt-shopping__tit">PANTS</strong>
-                    <p class="txt-shopping__desc">CONTRAST
-                      STITCH
-                      CARGO
-                      PANTS</p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#"> 
-                  <div class="thumb-shopping">
-                    <img src="./images/depth2/3.jpg" alt="shopping">
-                  </div>
-                  <div class="txt-shopping">
-                    <strong class="txt-shopping__tit">JUMPSUIT</strong>
-                    <p class="txt-shopping__desc">VOLUME
-                      LONG
-                      JUMPSUIT
-                      </p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#"> 
-                  <div class="thumb-shopping">
-                    <img src="./images/depth2/4.jpg" alt="shopping">
-                  </div>
-                  <div class="txt-shopping">
-                    <strong class="txt-shopping__tit">OUTER</strong>
-                    <p class="txt-shopping__desc">TUXEDO
-                      COLOR
-                      VEST
-                      </p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#"> 
-                  <div class="thumb-shopping">
-                    <img src="./images/depth2/5.jpg" alt="shopping">
-                  </div>
-                  <div class="txt-shopping">
-                    <strong class="txt-shopping__tit">TOP</strong>
-                    <p class="txt-shopping__desc">TEXT
-                      PRINTED</p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#"> 
-                  <div class="thumb-shopping">
-                    <img src="./images/depth2/6.jpg" alt="shopping">
-                  </div>
-                  <div class="txt-shopping">
-                    <strong class="txt-shopping__tit">BOTTOM</strong>
-                    <p class="txt-shopping__desc">CARPENTER’S
-                      POCKET
-                      JEAN</p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#"> 
-                  <div class="thumb-shopping">
-                    <img src="./images/depth2/7.jpg" alt="shopping">
-                  </div>
-                  <div class="txt-shopping">
-                    <strong class="txt-shopping__tit">TOP</strong>
-                    <p class="txt-shopping__desc">DENIM
-                      SWEATSHIRT</p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#"> 
-                  <div class="thumb-shopping">
-                    <img src="./images/depth2/8.jpg" alt="shopping">
-                  </div>
-                  <div class="txt-shopping">
-                    <strong class="txt-shopping__tit">BOTTOM</strong>
-                    <p class="txt-shopping__desc">SATIN
-                      PARA
-                      SUIT
-                      PANTS</p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#"> 
-                  <div class="thumb-shopping">
-                    <img src="./images/depth2/9.jpg" alt="shopping">
-                  </div>
-                  <div class="txt-shopping">
-                    <strong class="txt-shopping__tit">ACC</strong>
-                    <p class="txt-shopping__desc">ROCK
-                      FLAP
-                      SHOULDER
-                      BAG</p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#"> 
-                  <div class="thumb-shopping">
-                    <img src="./images/depth2/10.jpg" alt="shopping">
-                  </div>
-                  <div class="txt-shopping">
-                    <strong class="txt-shopping__tit">DRESS </strong>
-                    <p class="txt-shopping__desc">LINEN
-                      MINI
-                      DRESS</p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#"> 
-                  <div class="thumb-shopping">
-                    <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Fshop.phinf%2F20230713_167%2F1689241635540czIx3_PNG%2Fdw.PNG%22&type=ff364_236&service=navermain" alt="shopping">
-                  </div>
-                  <div class="txt-shopping">
-                    <strong class="txt-shopping__tit">제목</strong>
-                    <p class="txt-shopping__desc">상품설명</p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#"> 
-                  <div class="thumb-shopping">
-                    <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Fshop.phinf%2F20230713_167%2F1689241635540czIx3_PNG%2Fdw.PNG%22&type=ff364_236&service=navermain" alt="shopping">
-                  </div>
-                  <div class="txt-shopping">
-                    <strong class="txt-shopping__tit">제목</strong>
-                    <p class="txt-shopping__desc">상품설명</p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#"> 
-                  <div class="thumb-shopping">
-                    <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Fshop.phinf%2F20230713_167%2F1689241635540czIx3_PNG%2Fdw.PNG%22&type=ff364_236&service=navermain" alt="shopping">
-                  </div>
-                  <div class="txt-shopping">
-                    <strong class="txt-shopping__tit">제목</strong>
-                    <p class="txt-shopping__desc">상품설명</p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#"> 
-                  <div class="thumb-shopping">
-                    <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Fshop.phinf%2F20230713_167%2F1689241635540czIx3_PNG%2Fdw.PNG%22&type=ff364_236&service=navermain" alt="shopping">
-                  </div>
-                  <div class="txt-shopping">
-                    <strong class="txt-shopping__tit">제목</strong>
-                    <p class="txt-shopping__desc">상품설명</p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#"> 
-                  <div class="thumb-shopping">
-                    <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Fshop.phinf%2F20230713_167%2F1689241635540czIx3_PNG%2Fdw.PNG%22&type=ff364_236&service=navermain" alt="shopping">
-                  </div>
-                  <div class="txt-shopping">
-                    <strong class="txt-shopping__tit">제목</strong>
-                    <p class="txt-shopping__desc">상품설명</p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#"> 
-                  <div class="thumb-shopping">
-                    <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Fshop.phinf%2F20230713_167%2F1689241635540czIx3_PNG%2Fdw.PNG%22&type=ff364_236&service=navermain" alt="shopping">
-                  </div>
-                  <div class="txt-shopping">
-                    <strong class="txt-shopping__tit">제목</strong>
-                    <p class="txt-shopping__desc">상품설명</p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#"> 
-                  <div class="thumb-shopping">
-                    <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Fshop.phinf%2F20230713_167%2F1689241635540czIx3_PNG%2Fdw.PNG%22&type=ff364_236&service=navermain" alt="shopping">
-                  </div>
-                  <div class="txt-shopping">
-                    <strong class="txt-shopping__tit">제목</strong>
-                    <p class="txt-shopping__desc">상품설명</p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#"> 
-                  <div class="thumb-shopping">
-                    <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Fshop.phinf%2F20230713_167%2F1689241635540czIx3_PNG%2Fdw.PNG%22&type=ff364_236&service=navermain" alt="shopping">
-                  </div>
-                  <div class="txt-shopping">
-                    <strong class="txt-shopping__tit">제목</strong>
-                    <p class="txt-shopping__desc">상품설명</p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#"> 
-                  <div class="thumb-shopping">
-                    <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fs.pstatic.net%2Fshop.phinf%2F20230713_167%2F1689241635540czIx3_PNG%2Fdw.PNG%22&type=ff364_236&service=navermain" alt="shopping">
-                  </div>
-                  <div class="txt-shopping">
-                    <strong class="txt-shopping__tit">제목</strong>
-                    <p class="txt-shopping__desc">상품설명</p>
-                  </div>
-                </a>
-              </li>
+    <div class="best-menu ">
+      <h2 class="best-menu-tit">BEST</h2>
+      <div class="best-contents container">
+        <ul class="lst-thumb-two-column">
+          <li>
+            <a href="#"> 
+              <div class="thumb-shopping">
+                <img src="./images/depth2/1.jpg" alt="outer">
+              </div>
+              <div class="txt-shopping">
+                <strong class="txt-shopping__tit">UTILITY
+                  <br>POCKET
+                  <br>JUMPER
+                </strong>
+                <p class="txt-shopping__desc">OUTER</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#"> 
+              <div class="thumb-shopping">
+                <img src="./images/depth2/2.jpg" alt="pants">
+              </div>
+              <div class="txt-shopping">
+                <strong class="txt-shopping__tit">CONTRAST
+                  <br>STITCH
+                  <br>CARGO
+                  <br>PANTS
+                </strong>
+                <p class="txt-shopping__desc">BOTTOM</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#"> 
+              <div class="thumb-shopping">
+                <img src="./images/depth2/3.jpg" alt="jumpsuit">
+              </div>
+              <div class="txt-shopping">
+                <strong class="txt-shopping__tit">VOLUME
+                  <br>LONG
+                  <br>JUMPSUIT
+                </strong>
+                <p class="txt-shopping__desc">JUMPSUIT</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#"> 
+              <div class="thumb-shopping">
+                <img src="./images/depth2/4.jpg" alt="outer">
+              </div>
+              <div class="txt-shopping">
+                <strong class="txt-shopping__tit">TUXEDO
+                  <br>COLOR
+                  <br>VEST
+                </strong>
+                <p class="txt-shopping__desc">OUTER</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#"> 
+              <div class="thumb-shopping">
+                <img src="./images/depth2/5.jpg" alt="top">
+              </div>
+              <div class="txt-shopping">
+                <strong class="txt-shopping__tit">TEXT
+                  <br>PRINTED
+                </strong>
+                <p class="txt-shopping__desc">TOP</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#"> 
+              <div class="thumb-shopping">
+                <img src="./images/depth2/6.jpg" alt="bottom">
+              </div>
+              <div class="txt-shopping">
+                <strong class="txt-shopping__tit">CARPENTER’S
+                  <br>POCKET
+                  <br>JEAN
+                </strong>
+                <p class="txt-shopping__desc">BOTTOM</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#"> 
+              <div class="thumb-shopping">
+                <img src="./images/depth2/7.jpg" alt="top">
+              </div>
+              <div class="txt-shopping">
+                <strong class="txt-shopping__tit">DENIM
+                  <br>SWEATSHIRT
+                </strong>
+                <p class="txt-shopping__desc">TOP</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#"> 
+              <div class="thumb-shopping">
+                <img src="./images/depth2/8.jpg" alt="bottom">
+              </div>
+              <div class="txt-shopping">
+                <strong class="txt-shopping__tit">SATIN
+                  <br>PARA
+                  <br>SUIT
+                  <br>PANTS
+                </strong>
+                <p class="txt-shopping__desc">BOTTOM</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#"> 
+              <div class="thumb-shopping">
+                <img src="./images/depth2/9.jpg" alt="acc">
+              </div>
+              <div class="txt-shopping">
+                <strong class="txt-shopping__tit">ROCK
+                  <br>FLAP
+                  <br>SHOULDER
+                  <br>BAG
+                </strong>
+                <p class="txt-shopping__desc">ACC</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#"> 
+              <div class="thumb-shopping">
+                <img src="./images/depth2/10.jpg" alt="dress">
+              </div>
+              <div class="txt-shopping">
+                <strong class="txt-shopping__tit">LINEN
+                  <br>MINI
+                  <br>DRESS
+                </strong>
+                <p class="txt-shopping__desc">DRESS</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+            
               
-            </ul>
-          </div>
-        </section>
-        <section class="bg-gray container section-g section-feed">
-          <h2 class="section-tit">섹션 제목</h2>
-          <div class="section-contents">섹션 컨텐츠</div>
-        </section>
-      </main>
+              
+           
 
       <div class="wrap">
        <footer data-include-path="./outline/footer.html">

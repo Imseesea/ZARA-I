@@ -196,7 +196,7 @@
             position: relative;
             overflow: hidden;
             width: 100%;
-            border-radius: 4px;
+            
             &::before {
                 content: "";
                 display: block;
@@ -241,10 +241,11 @@
         .txt-shopping__tit {
             display: block;
             margin-bottom: 5px;
-            font-size: 14px;
+            font-size: 16px;
             color: $titDefult;
         }
         .txt-shopping__desc {
+
             font-size: 12px;
         }
     }
