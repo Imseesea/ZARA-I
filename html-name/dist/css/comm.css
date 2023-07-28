@@ -268,19 +268,6 @@ input[type=password] {
      object-fit: cover;
 }
 
-.best-menu .best-menu-tit {
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
-  font-size: 24px;
-  color: #121212;
-  vertical-align: top;
-  text-decoration: none;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 0 20px;
-  background-color: #f1f4f6;
-  line-height: 40px;
-}
 .best-menu .lst-thumb-two-column {
   display: flex;
   justify-content: space-between;
@@ -300,7 +287,7 @@ input[type=password] {
   content: "";
   display: block;
   height: 0;
-  padding-top: 100%;
+  padding-top: 150%;
 }
 .best-menu .lst-thumb-two-column li .thumb-shopping::after {
   content: "";
@@ -351,6 +338,51 @@ input[type=password] {
   font-size: 12px;
 }
 
+.celeb-menu .celeb-contents li:nth-child(3) {
+  box-sizing: border-box;
+  background-color: #f1f4f6;
+  font-size: 24px;
+  color: #121212;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.list-event li {
+  margin-bottom: 50px;
+  position: relative;
+  box-sizing: border-box;
+}
+.list-event img {
+  display: block;
+  width: 100%;
+  height: 375px;
+  margin-bottom: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+  border: 1px solid #000;
+  border-radius: 40px;
+  background: rgba(0, 0, 0, 0.03);
+}
+.list-event p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  text-align: center;
+  border: 1px solid #000;
+  border-radius: 50px;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.insta .insta-feed p {
+  text-align: center;
+  font-size: 16px;
+}
+
 .contents {
   height: 300px;
 }
@@ -364,7 +396,22 @@ input[type=password] {
 }
 
 .bg-gray {
-  background: #eee;
+  background: white;
+}
+
+.tit-sub2 {
+  box-sizing: border-box;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  font-size: 24px;
+  color: #121212;
+  vertical-align: top;
+  text-decoration: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  background-color: #f1f4f6;
+  line-height: 40px;
 }
 
 #header {
@@ -374,7 +421,7 @@ input[type=password] {
   width: 100%;
   z-index: 1000;
   border-bottom: 1px solid #000;
-  background: rgba(255, 255, 255, 0.5);
+  background: white;
 }
 #header .inner {
   display: flex;
@@ -518,6 +565,7 @@ input[type=password] {
 }
 
 .lst-thumb-two-column {
+  margin-top: 20px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -576,6 +624,13 @@ input[type=password] {
 }
 .lst-thumb-two-column .txt-shopping .txt-shopping__desc {
   font-size: 12px;
+}
+
+.insta .insta-feed .link-insta {
+  display: block;
+  margin: auto;
+  width: 70px;
+  text-align: center;
 }
 
 #footer {
