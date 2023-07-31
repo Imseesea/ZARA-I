@@ -1,39 +1,8 @@
 @charset "UTF-8";
-@font-face {
-  font-family: "Poppins";
-  font-weight: 100;
-  src: url(../fonts/AnyConv.com__Poppins-Thin.woff) format("woff");
+* {
+  font-family: Pretendard, "Noto Sans KR", sans-serif;
 }
-@font-face {
-  font-family: "Poppins";
-  font-weight: 200;
-  src: url(../fonts/AnyConv.com__Poppins-ExtraLight.woff) format("woff");
-}
-@font-face {
-  font-family: "Poppins";
-  font-weight: 300;
-  src: url(../fonts/AnyConv.com__Poppins-Light.woff) format("woff");
-}
-@font-face {
-  font-family: "Poppins";
-  font-weight: 400;
-  src: url(../fonts/AnyConv.com__Poppins-Regular.woff) format("woff");
-}
-@font-face {
-  font-family: "Poppins";
-  font-weight: 500;
-  src: url(../fonts/AnyConv.com__Poppins-Medium.woff) format("woff");
-}
-@font-face {
-  font-family: "Poppins";
-  font-weight: 600;
-  src: url(../fonts/AnyConv.com__Poppins-SemiBold.woff) format("woff");
-}
-@font-face {
-  font-family: "Poppins";
-  font-weight: 700;
-  src: url(../fonts/AnyConv.com__Poppins-Bold.woff) format("woff");
-}
+
 /* reset */
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, textarea, p, blockquote, th, td, input, select, button, header, main, footer, article {
   margin: 0;
@@ -315,6 +284,12 @@ input[type=password] {
 .best-menu .lst-thumb-two-column .txt-shopping {
   text-align: center;
   margin-top: 10px;
+}
+.best-menu .lst-thumb-two-column .txt-shopping .w {
+  color: #fff;
+}
+.best-menu .lst-thumb-two-column .txt-shopping .m {
+  color: #5eecfa;
 }
 .best-menu .lst-thumb-two-column .txt-shopping .txt-shopping__tit {
   display: block;

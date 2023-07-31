@@ -63,12 +63,17 @@
                 height: 100%;
                 object-fit: cover;
                 object-position: 0 50%;
-                
             }
         }
         .txt-shopping {
             text-align: center;
             margin-top: 10px;
+            .w {
+                color: $w;
+            }
+            .m {
+                color: $m;
+            }
             .txt-shopping__tit {
                 display: block;
                 overflow: hidden;
@@ -81,6 +86,7 @@
                 margin-bottom: 5px;
                 font-size: 16px;
                 color: $titDefult;
+                
             }
             .txt-shopping__desc {
                 position: absolute;
