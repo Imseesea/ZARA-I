@@ -436,16 +436,12 @@ input[type=password] {
 .goods-lst .goods-lst__container {
   display: flex;
   flex-direction: column;
-  position: relative;
   padding-bottom: 81px;
 }
 .goods-lst .goods-lst__container .goods-lst__sort {
   display: flex;
+  position: relative;
   justify-content: center;
-  position: sticky;
-  left: 0;
-  bottom: calc(10px + env(safe-area-inset-bottom));
-  z-index: 15;
 }
 .goods-lst .goods-lst__container .goods-lst__sort .goods-lst__trigger {
   display: inline-flex;
@@ -472,16 +468,17 @@ input[type=password] {
   border-top: 0;
   border-bottom: 10px solid rgba(94, 236, 250, 0.3);
 }
-.goods-lst .goods-lst__container .goods-lst__sort .goods-lst__option {
+.goods-lst .goods-lst__container .goods-lst__sort .goods-lst__els {
+  position: absolute;
+  left: 50%;
+  bottom: 72px;
+  transform: translate(-50%, 0);
   display: block;
   align-items: center;
   z-index: 15;
 }
-.goods-lst .goods-lst__container .goods-lst__sort .goods-lst__option .goods-lst__item {
-  position: absolute;
-  left: 50%;
-  top: -150%;
-  transform: translate(-50%, 0);
+.goods-lst .goods-lst__container .goods-lst__sort .goods-lst__els .goods-lst__item {
+  margin-top: 10px;
   display: flex;
   align-items: center;
   height: 34px;
@@ -490,11 +487,41 @@ input[type=password] {
   border-radius: 100vw;
   background: #fff;
 }
-.goods-lst .goods-lst__container .goods-lst__sort .goods-lst__option .goods-lst__item:not(:first-child) {
-  margin-bottom: 20px;
-}
-.goods-lst .goods-lst__container .goods-lst__sort .goods-lst__option .goods-lst__item a {
+.goods-lst .goods-lst__container .goods-lst__sort .goods-lst__els .goods-lst__item a {
   margin: auto;
+}
+
+.xans-product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.xans-product .btn__prev {
+  box-sizing: border-box;
+  border: 1px solid #000;
+  border-radius: 50px;
+  padding: 0 20px;
+}
+.xans-product .btn__next {
+  box-sizing: border-box;
+  border: 1px solid #000;
+  border-radius: 50px;
+  padding: 0 20px;
+}
+.xans-product .paging_number {
+  height: 100%;
+  margin: 0 6px;
+  padding: 0 30px;
+  border: 1px solid #000000;
+  border-radius: 100vw;
+  align-items: center;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 34px;
+}
+.xans-product .paging_number .xans-record {
+  display: inline-block;
+  padding: 10px 10px;
 }
 
 .wrap {
