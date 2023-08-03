@@ -1,278 +1,276 @@
 @charset "UTF-8";
-@import "variables", "mixin", "fonts","reset", "main", "contents", "goods-list";
+@import "variables", "mixin", "fonts", "reset", "main", "contents", "goods-list";
 
-// comm.scss - 
+// comm.scss -
 // 공통요소 : 헤더, 풋터, 버튼, 아이콘, 박스
 
 // 공통
 .wrap {
-    padding-top: 70px;
+  padding-top: 70px;
 }
 .container {
-    padding: 0 $bothMargin;
+  padding: 0 $bothMargin;
 }
 .bg-gray {
-    background: rgba($w,1);
+  background: rgba($w, 1);
 }
 .tit-sub2 {
-    box-sizing: border-box;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
-    font-size: 24px;
-    color: #121212;
-    vertical-align: top;
-    text-decoration: none;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 0 $bothMargin;
-    background-color: #f1f4f6;
-    line-height: 40px;
+  box-sizing: border-box;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  font-size: 24px;
+  color: #121212;
+  vertical-align: top;
+  text-decoration: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0 $bothMargin;
+  background-color: #f1f4f6;
+  line-height: 40px;
 }
 // header
 #header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    border-bottom: 1px solid $b;
-    background: rgba($w,1);
-    
-    .inner {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  border-bottom: 1px solid $b;
+  background: rgba($w, 1);
+
+  .inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+  }
+  .head__right {
+    display: flex;
+  }
+  #logo {
+    position: relative;
+    z-index: 1100;
+  }
+  .util-list {
+    display: flex;
+    li {
+      display: flex;
     }
-    .head__right {
-        display: flex;
+    .btn-g,
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 40px;
+      height: 70px;
+      .material-icons-outlined {
+        font-size: 26px;
+      }
+      &::before {
+        font-size: 20px;
+        font-family: "Font Awesome 6 Free";
+      }
     }
-    #logo {
-        position: relative;
-        z-index: 1100;
-    }
-    .util-list {
-        display: flex;
-        li {
-            display: flex;
-        }
-        .btn-g,
-        a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-           
-            width: 40px;
-            height: 70px;
-            .material-icons-outlined {
-                font-size: 26px;
-            }
-            &::before {
-                font-size: 20px;
-                font-family: "Font Awesome 6 Free";
-            }
-        }
-        // .btn-search::before {
-        //         content: "\f002";
-        //         font-weight: 900;
-        // }
-        // .btn-burger::before {
-        //     content: "\f007";
-        //     font-weight: 400;
-        // }
-    }   
+    // .btn-search::before {
+    //         content: "\f002";
+    //         font-weight: 900;
+    // }
+    // .btn-burger::before {
+    //     content: "\f007";
+    //     font-weight: 400;
+    // }
+  }
 }
 
 .gnb-wrap {
-    .input-burger {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 0;
-        height: 0;
-        opacity: 0;
-        &:checked {
-            // input이 선택 됐을 떼
-            &+ label {
-                .bar {
-                    background: $b;
-                    &:nth-child(2) {
-                        transform: rotate(45deg) translate(5px,5px);
-                    }
-                    &:nth-child(3) {
-                        opacity: 0;
-                    }
-                    &:nth-child(4) {
-                        transform: rotate(-45deg) translate(5px,-5px);
-                    }
-                }
-            }
-            & ~ #gnb {
-                right: 0;
-            }
-        }
-    }
-    
-    .label-burger {
-        position: relative;
-        z-index: 1100;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        width: 40px;
-        height: $headerHeight;
-        cursor: pointer;
+  .input-burger {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    &:checked {
+      // input이 선택 됐을 떼
+      & + label {
         .bar {
-            display: block;
-            width: 26px;
-            height: 2px;
-            background: $b;
-            transition: all 0.3s;
+          background: $b;
+          &:nth-child(2) {
+            transform: rotate(45deg) translate(5px, 5px);
+          }
+          &:nth-child(3) {
+            opacity: 0;
+          }
+          &:nth-child(4) {
+            transform: rotate(-45deg) translate(5px, -5px);
+          }
         }
-        span {
-            &:nth-child(3) {
-                margin: 5px 0;
-            }
-        }
+      }
+      & ~ #gnb {
+        right: 0;
+      }
     }
-    #gnb {
-       position: fixed;
-       top: 0;
-       right: -100%;
-       bottom: 0;
-       width: 100%;
-       padding: 50px;
-       background: $prim1;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       transition: all 0.3s;
-    }
-}
-// slide
-.swiper {
-    width: 100%;
-    height: 100%;
   }
 
-  .swiper-slide {
-    height: 100vh;
-    text-align: center;
-    font-size: 18px;
-    background: #b7e0ff;
+  .label-burger {
+    position: relative;
+    z-index: 1100;
     display: flex;
     justify-content: center;
     align-items: center;
-    &::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba($b, 0.2);
+    flex-direction: column;
+    width: 40px;
+    height: $headerHeight;
+    cursor: pointer;
+    .bar {
+      display: block;
+      width: 26px;
+      height: 2px;
+      background: $b;
+      transition: all 0.3s;
+    }
+    span {
+      &:nth-child(3) {
+        margin: 5px 0;
+      }
     }
   }
-  
-  .swiper-slide img {
-    display: block;
+  #gnb {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    bottom: 0;
+    width: 100%;
+    padding: 50px;
+    background: $prim1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+  }
+}
+// slide
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  height: 100vh;
+  text-align: center;
+  font-size: 18px;
+  background: #b7e0ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    background: rgba($b, 0.2);
   }
-  
-  
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 // main
 .section-g {
-    padding-top: 30px;
-    padding-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .section-tit {
-    font-size: 20px;
-    color: &b;
-    // 컬러지정색변경할때만컬러값입력
+  font-size: 20px;
+  color: &b;
+  // 컬러지정색변경할때만컬러값입력
 }
 .section-contents {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 // 이미지 게시판
 .lst-thumb-two-column {
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    li {
-        width: calc(50% - $spacingList / 2);
-        margin-bottom: $spacingList;
-        .thumb-shopping {
-            position: relative;
-            overflow: hidden;
-            width: 100%;
-            
-            &::before {
-                content: "";
-                display: block;
-                height: 0;
-                padding-top: 100%;
-            }
-            &::after {
-                content: "";
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                border-radius: inherit;
-                border: 1px solid rgba($b, 0.06);
-                background: rgba($b, 0.03);
-            }
-        
-        }
-        img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: 0 50%;
-            transition: transform .0.3s;
-        }
-    }
-    a {
-     &:hover {
-        img {
-            transform: scale(1.5);
-        }
-     }   
-    }
-    .txt-shopping {
-        margin-top: 10px;
-        .txt-shopping__tit {
-            display: block;
-            margin-bottom: 5px;
-            font-size: 16px;
-            color: $titDefult;
-        }
-        .txt-shopping__desc {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  li {
+    width: calc(50% - $spacingList / 2);
+    margin-bottom: $spacingList;
+    .thumb-shopping {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
 
-            font-size: 12px;
-        }
+      &::before {
+        content: "";
+        display: block;
+        height: 0;
+        padding-top: 100%;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: inherit;
+        border: 1px solid rgba($b, 0.06);
+        background: rgba($b, 0.03);
+      }
     }
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 0 50%;
+      transition: transform 0.3s;
+    }
+  }
+  a {
+    &:hover {
+      img {
+        transform: scale(1.5);
+      }
+    }
+  }
+  .txt-shopping {
+    margin-top: 10px;
+    .txt-shopping__tit {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 16px;
+      color: $titDefult;
+    }
+    .txt-shopping__desc {
+      font-size: 12px;
+    }
+  }
 }
 .insta .insta-feed .link-insta {
-    display: block;
-    margin: auto;
-    width: 70px;
-    text-align: center;
-
+  display: block;
+  margin: auto;
+  width: 70px;
+  text-align: center;
 }
 // footer
 #footer {
-    margin-bottom: 200px;
-    border-top: 1px solid $b;
+  margin-top: 50px;
+  padding-top: 30px;
+  margin-bottom: 200px;
+  border-top: 1px solid $b;
 }

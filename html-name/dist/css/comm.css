@@ -469,6 +469,7 @@ input[type=password] {
   border-bottom: 10px solid rgba(94, 236, 250, 0.3);
 }
 .goods-lst .goods-lst__container .goods-lst__sort .goods-lst__els {
+  display: flex;
   position: absolute;
   left: 50%;
   bottom: 72px;
@@ -476,6 +477,9 @@ input[type=password] {
   display: block;
   align-items: center;
   z-index: 15;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
 }
 .goods-lst .goods-lst__container .goods-lst__sort .goods-lst__els .goods-lst__item {
   margin-top: 10px;
@@ -490,27 +494,29 @@ input[type=password] {
 .goods-lst .goods-lst__container .goods-lst__sort .goods-lst__els .goods-lst__item a {
   margin: auto;
 }
+.goods-lst .goods-lst__container .goods-lst__sort .goods-lst__els.active {
+  /* display: flex; */
+  visibility: visible;
+  opacity: 1;
+}
 
 .xans-product {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.xans-product .btn__prev {
-  box-sizing: border-box;
-  border: 1px solid #000;
-  border-radius: 50px;
   padding: 0 20px;
 }
-.xans-product .btn__next {
+.xans-product .number {
+  display: flex;
   box-sizing: border-box;
   border: 1px solid #000;
-  border-radius: 50px;
-  padding: 0 20px;
+  border-radius: 21px;
+  padding: 27px 20px;
+  align-items: center;
+  height: 34px;
 }
 .xans-product .paging_number {
   height: 100%;
-  margin: 0 6px;
   padding: 0 30px;
   border: 1px solid #000000;
   border-radius: 100vw;
@@ -745,7 +751,7 @@ input[type=password] {
      object-fit: cover;
   -o-object-position: 0 50%;
      object-position: 0 50%;
-  transition: transform 0 0.3s;
+  transition: transform 0.3s;
 }
 .lst-thumb-two-column a:hover img {
   transform: scale(1.5);
@@ -771,6 +777,8 @@ input[type=password] {
 }
 
 #footer {
+  margin-top: 50px;
+  padding-top: 30px;
   margin-bottom: 200px;
   border-top: 1px solid #000;
 }/*# sourceMappingURL=comm.css.map */
