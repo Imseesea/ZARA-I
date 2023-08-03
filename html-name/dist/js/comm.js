@@ -16,5 +16,6 @@ $(function () {
   $(".goods-lst__els").removeClass("active");
   $(".goods-lst__trigger").on("click", function () {
     $(".goods-lst__els").toggleClass("active");
+    $(".goods-lst__trigger").toggleClass("on");
   });
 });

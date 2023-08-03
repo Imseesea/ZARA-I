@@ -452,8 +452,10 @@ input[type=password] {
   box-sizing: border-box;
   border: 1px solid #000;
   border-radius: 100vw;
-  background-color: #fff;
   align-items: center;
+}
+.goods-lst .goods-lst__container .goods-lst__sort .goods-lst__trigger.on {
+  background-color: rgba(94, 236, 250, 0.3);
 }
 .goods-lst .goods-lst__container .goods-lst__sort .goods-lst__trigger .goods-lst__text {
   text-align: center;
@@ -481,6 +483,11 @@ input[type=password] {
   visibility: hidden;
   transition: all 0.3s;
 }
+.goods-lst .goods-lst__container .goods-lst__sort .goods-lst__els.active {
+  /* display: flex; */
+  visibility: visible;
+  opacity: 1;
+}
 .goods-lst .goods-lst__container .goods-lst__sort .goods-lst__els .goods-lst__item {
   margin-top: 10px;
   display: flex;
@@ -494,11 +501,6 @@ input[type=password] {
 .goods-lst .goods-lst__container .goods-lst__sort .goods-lst__els .goods-lst__item a {
   margin: auto;
 }
-.goods-lst .goods-lst__container .goods-lst__sort .goods-lst__els.active {
-  /* display: flex; */
-  visibility: visible;
-  opacity: 1;
-}
 
 .xans-product {
   display: flex;
@@ -510,14 +512,15 @@ input[type=password] {
   display: flex;
   box-sizing: border-box;
   border: 1px solid #000;
-  border-radius: 21px;
+  border-radius: 50%;
   padding: 27px 20px;
   align-items: center;
   height: 34px;
 }
 .xans-product .paging_number {
+  display: flex;
   height: 100%;
-  padding: 0 30px;
+  padding: 0 22px;
   border: 1px solid #000000;
   border-radius: 100vw;
   align-items: center;
@@ -525,9 +528,13 @@ input[type=password] {
   text-align: center;
   line-height: 34px;
 }
-.xans-product .paging_number .xans-record {
-  display: inline-block;
-  padding: 10px 10px;
+.xans-product .paging_number a {
+  display: block;
+  padding: 12px;
+}
+
+:root {
+  --swiper-theme-color: #fff;
 }
 
 .wrap {
@@ -661,6 +668,10 @@ input[type=password] {
   transition: all 0.3s;
 }
 
+.slide-intro {
+  height: calc(100vh - 70px);
+}
+
 .swiper {
   width: 100%;
   height: 100%;
@@ -754,7 +765,7 @@ input[type=password] {
   transition: transform 0.3s;
 }
 .lst-thumb-two-column a:hover img {
-  transform: scale(1.5);
+  transform: scale(1.1);
 }
 .lst-thumb-two-column .txt-shopping {
   margin-top: 10px;
