@@ -74,7 +74,7 @@
       font-size: 16px;
       display: inline-block;
       position: relative;
-       
+      //  아이콘 after로 넣기
        &::after {
         content: "\f0d8";
         font-family: 'Line Awesome Free';
