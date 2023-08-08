@@ -18,4 +18,13 @@ $(function () {
     $(".goods-lst__els").toggleClass("active");
     $(".goods-lst__trigger").toggleClass("on");
   });
+
+  $(".product-opt_tit").removeClass("active");
+  $(".product-opt_tit").on("click", function () {
+    // $(".product-opt_txt").toggleClass("active");
+    // $(".product-opt_tit").toggleClass("on");
+
+    // $(".product_option").toggleClass("active");
+    $(this).parent().toggleClass("active");
+  });
 });
