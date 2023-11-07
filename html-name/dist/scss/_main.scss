@@ -1,151 +1,163 @@
 // main slide top
 .slide-intro {
-    .swiper {
-        width: 100%;
-        height: 100%;
-      }
-  
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-  
-      .swiper-slide video {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 .best-menu {
-    .lst-thumb-two-column {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        li {
-            width: calc(50% - $spacingList / 2);
-            margin-bottom: $spacingList;
-        a {
-            position: relative;
-        }    
-            .thumb-shopping {
-                width: 100%;
-                &::before {
-                    content: "";
-                    display: block;
-                    height: 0;
-                    padding-top: 150%;
-                }
-                &::after {
-                    content: "";
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    right: 0;
-                    bottom: 0;
-                    border: 1px solid rgba($b, 0.06);
-                    background: rgba($b, 0.03);
-                }
-            
-            }
-            img {
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                object-position: 0 50%;
-            }
+  .lst-thumb-two-column {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    li {
+      width: calc(50% - $spacingList / 2);
+      margin-bottom: $spacingList;
+      a {
+        position: relative;
+      }
+      .thumb-shopping {
+        width: 100%;
+        &::before {
+          content: "";
+          display: block;
+          height: 0;
+          padding-top: 150%;
         }
-        .txt-shopping {
-            text-align: center;
-            margin-top: 10px;
-            .w {
-                color: $w;
-            }
-            .m {
-                color: $m;
-            }
-            .txt-shopping__tit {
-                display: block;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                position: absolute;
-                top: 40%;
-                right: 0;
-                bottom: 0;
-                left: 0;
-                margin-bottom: 5px;
-                font-size: 16px;
-                color: $titDefult;
-                
-            }
-            .txt-shopping__desc {
-                position: absolute;
-                top: 30%;
-                right: 0;
-                bottom: 0;
-                left: 0;
-                font-size: 12px;
-            }
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          border: 1px solid rgba($b, 0.06);
+          background: rgba($b, 0.03);
         }
-    }    
+      }
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 0 50%;
+      }
+    }
+    .txt-shopping {
+      text-align: center;
+      margin-top: 10px;
+      .w {
+        color: $w;
+      }
+      .m {
+        color: $m;
+      }
+      .txt-shopping__tit {
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        position: absolute;
+        top: 40%;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin-bottom: 5px;
+        font-size: 16px;
+        color: $titDefult;
+      }
+      .txt-shopping__desc {
+        position: absolute;
+        top: 30%;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        font-size: 12px;
+      }
+    }
+  }
 }
 
 .celeb-menu {
-    .celeb-contents li:nth-child(3) {
-        box-sizing: border-box;
-        background-color: #f1f4f6;
-        font-size: 24px;
-        color: #121212;
-        text-align: center;
-        padding: 0 $bothMargin;
-    }
-
+  .celeb-contents li:nth-child(3) {
+    box-sizing: border-box;
+    background-color: #f1f4f6;
+    font-size: 24px;
+    color: #121212;
+    text-align: center;
+    padding: 0 $bothMargin;
+  }
 }
 
 .list-event {
-    li {
-        margin-bottom: 50px;
-        position: relative;
-        box-sizing: border-box;
-        
-    }
-    img {
-        display: block;
-        width: 100%;
-        height: 375px;
-        margin-bottom: 20px;
-        object-fit: cover;
-        object-position: 50% 50%;
-        border: 1px solid #000;
-        border-radius: 40px;
-        background: rgba($b, 0.03);
-        
-    }
-    p {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 20px;
-        text-align: center;
-        border: 1px solid #000;
-        border-radius: 50px;
-        padding: 10px 20px;
-        background: rgba(255, 255, 255, 0.5);
-    }
+  li {
+    margin-bottom: 50px;
+    position: relative;
+    box-sizing: border-box;
+  }
+  img {
+    display: block;
+    width: 100%;
+    height: 375px;
+    margin-bottom: 20px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border: 1px solid #000;
+    border-radius: 40px;
+    background: rgba($b, 0.03);
+  }
+  p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 50px;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.5);
+  }
 }
 
 .insta .insta-feed p {
-    text-align: center;
-    font-size: 16px;
+  text-align: center;
+  font-size: 16px;
+}
+.sns-sec {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  ul {
+    display: flex;
+    align-items: center;
+    li {
+      display: flex;
+      margin-left: 20px;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
 }

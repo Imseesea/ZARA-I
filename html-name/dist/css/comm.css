@@ -358,6 +358,24 @@ input[type=password] {
   font-size: 16px;
 }
 
+.sns-sec {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sns-sec ul {
+  display: flex;
+  align-items: center;
+}
+.sns-sec ul li {
+  display: flex;
+  margin-left: 20px;
+}
+.sns-sec ul li:first-child {
+  margin-left: 0;
+}
+
 .contents {
   height: 300px;
 }
