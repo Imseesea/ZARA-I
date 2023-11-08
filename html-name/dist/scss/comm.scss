@@ -10,6 +10,8 @@
 }
 // 공통
 .wrap {
+  max-width: 480px;
+  margin: 0 auto;
   padding-top: 70px;
 }
 .container {
@@ -54,6 +56,14 @@
   #logo {
     position: relative;
     z-index: 1100;
+    a {
+      display: block;
+      width: 160px;
+      height: 70px;
+      img {
+        width: 100%;
+      }
+    }
   }
   .util-list {
     display: flex;
@@ -278,6 +288,18 @@
 #footer {
   margin-top: 50px;
   padding-top: 30px;
-  margin-bottom: 200px;
+  margin-bottom: 20px;
   border-top: 1px solid $b;
+  .cs {
+    display: flex;
+    justify-content: space-between;
+    a {
+      width: 117px;
+      text-align: center;
+      border: 1px solid #000;
+      border-radius: 50px;
+      padding: 10px 20px;
+      margin-bottom: 20px;
+    }
+  }
 }
