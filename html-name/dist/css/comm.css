@@ -443,6 +443,7 @@ input[type=password] {
   word-break: break-all;
   line-height: 20px;
   overflow: hidden;
+  margin-top: 8px;
 }
 .goods-top .lst-thumb-two-column .goods-shopping .goods-shopping__price {
   display: block;
@@ -552,7 +553,7 @@ input[type=password] {
 }
 
 .detail-info {
-  padding: 0, 20px;
+  padding: 0 20px;
 }
 .detail-info .detail-inner {
   background: rgba(0, 0, 0, 0.03);
@@ -560,7 +561,7 @@ input[type=password] {
   border: 1px solid #000;
   border-radius: 40px;
   width: 100%;
-  padding: 20px 10px;
+  padding: 20px 10px 20px 20px;
 }
 .detail-info .detail-inner .produck-type {
   font-size: 16px;
@@ -574,27 +575,37 @@ input[type=password] {
 .detail-info .detail-inner .mo_fixed_option {
   position: fixed;
   display: flex;
-  bottom: 0;
+  bottom: -180px;
   left: 0;
   background-color: rgba(94, 236, 250, 0.5);
   width: 100%;
-  height: 60px;
-  border-top-left-radius: 40px;
-  border-top-right-radius: 40px;
-  padding: 20px 0;
-  align-items: center;
+  padding: 20px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  align-items: flex-start;
   justify-content: space-between;
-  transition: opacity 0.1s ease-in-out;
+  flex-direction: column;
+  transition: all 0.3s ease-in-out;
+  box-sizing: border-box;
   z-index: 10;
+}
+.detail-info .detail-inner .mo_fixed_option.active {
+  bottom: 0 !important;
+}
+.detail-info .detail-inner .mo_fixed_option .opt-bottom {
+  width: 100%;
+  margin-top: 20px;
+}
+.detail-info .detail-inner .mo_fixed_option .product-opt_tit {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
 }
 .detail-info .detail-inner .mo_fixed_option .opt-inner {
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: space-between;
-}
-.detail-info .detail-inner .mo_fixed_option .opt-inner p {
-  margin: 20px;
 }
 .detail-info .detail-inner .mo_fixed_option .opt-inner p:first-child {
   font-size: 16px;
@@ -615,6 +626,7 @@ input[type=password] {
 }
 .detail-info .xans-recode {
   position: relative;
+  margin-top: 10px;
 }
 .detail-info .xans-recode.active .product-opt_tit::after {
   content: "\f0d8";
@@ -623,6 +635,7 @@ input[type=password] {
   display: block;
 }
 .detail-info .xans-recode .product-opt_tit {
+  margin-bottom: 5px;
   font-size: 16px;
   display: inline-block;
   position: relative;
@@ -633,7 +646,7 @@ input[type=password] {
   font-family: "Line Awesome Free";
   font-weight: 900;
   position: absolute;
-  top: -3px;
+  top: 0;
   right: 0;
 }
 .detail-info .xans-recode .product-opt_txt {
@@ -647,7 +660,7 @@ input[type=password] {
 }
 
 .product-opt_txt .product-opt_txt1 {
-  font-size: 16px;
+  font-size: 14px;
   display: inline-block;
 }
 
@@ -675,6 +688,14 @@ input[type=password] {
   display: flex;
   flex-direction: column;
   padding-top: 50px;
+}
+.prdguide .active .accord_panel {
+  padding: 10px 0 50px;
+  max-height: 1000px;
+}
+.prdguide .active .accord_title .accord_target span::after {
+  opacity: 0;
+  transform: rotate(-90deg);
 }
 .prdguide .accord_title {
   padding-bottom: 20px;
@@ -705,6 +726,7 @@ input[type=password] {
   transition: 0.4s ease;
 }
 .prdguide .accord_title .accord_target span::after {
+  opacity: 1;
   content: " ";
   position: absolute;
   top: 4px;
@@ -716,7 +738,9 @@ input[type=password] {
   transition: 0.4s ease;
 }
 .prdguide .accord_panel {
-  padding: 10px 0 50px;
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
   font-weight: 400;
   line-height: 1.4;
   text-align: left;
@@ -752,8 +776,8 @@ input[type=password] {
 
 .tit-sub2 {
   box-sizing: border-box;
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
   font-size: 24px;
   color: #121212;
   vertical-align: top;
@@ -771,7 +795,7 @@ input[type=password] {
   left: 0;
   width: 100%;
   z-index: 1000;
-  border-bottom: 1px solid #000;
+  border-bottom: 3px solid #000;
   background: white;
 }
 #header .inner {
@@ -869,12 +893,36 @@ input[type=password] {
   right: -100%;
   bottom: 0;
   width: 100%;
-  padding: 50px;
-  background: #ffca00;
+  height: 100%;
+  padding: 20px;
+  background: #fff;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   transition: all 0.3s;
+  margin-left: 0;
+}
+.gnb-wrap .nav-container {
+  flex-direction: column;
+  justify-content: stretch;
+  overflow-y: auto;
+  height: 100%;
+  padding: 135px 0 90px;
+}
+.gnb-wrap .nav-container .nav-menu .nav-list {
+  width: 100%;
+}
+.gnb-wrap .nav-container .nav-menu .nav-list .nav-item {
+  padding-bottom: 10px;
+  text-align: left;
+}
+.gnb-wrap .nav-container .nav-menu .nav-list .nav-item .nav-link {
+  font-weight: 500;
+  font-size: 20px;
+  display: inline-block;
+}
+.gnb-wrap .nav-container .nav-menu .nav-list .mem .nav-link {
+  font-weight: 400;
+  font-size: 11px;
 }
 
 .slide-intro {

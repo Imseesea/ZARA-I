@@ -27,4 +27,33 @@ $(function () {
     // $(".product_option").toggleClass("active");
     $(this).parent().toggleClass("active");
   });
+
+  // 아코디언
+
+  $(".accord_title").on("click", function (event) {
+    event.preventDefault();
+    // $(".accord_item").removeClass("active");
+    $(this).parent().toggleClass("active");
+  });
+
+  // gsap
+  const toTopEl = document.querySelector(".mo_fixed_option");
+  window.addEventListener(
+    "scroll",
+    _.throttle(function () {
+      if (window.scrollY > 200) {
+        gsap.to(toTopEl, 0.2, {
+          bottom: "-100px",
+        });
+      } else {
+        gsap.to(toTopEl, 0.2, {
+          bottom: "-180px",
+        });
+      }
+    }, 300)
+  );
+
+  $(".mo_fixed_option").on("click", function () {
+    $(this).toggleClass("active");
+  });
 });
