@@ -60,9 +60,8 @@
       display: block;
       width: 160px;
       height: 70px;
-      img {
-        width: 100%;
-      }
+      background: url(../../images/main/zara-logo.png) 0 0 no-repeat;
+      background-size: cover;
     }
   }
   .util-list {
